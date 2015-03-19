@@ -1,0 +1,15 @@
+h1 {
+	font-size: 5.75em;
+	margin: .75em;
+	text-align: center;
+}
+
+h2, h3, h4, h5 {
+	text-align: center;
+}
+
+h6 {
+	margin-top: 8em;
+	margin-left: 2em;
+	font-size: 1em;
+}
