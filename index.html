@@ -2,7 +2,6 @@
 <html>
 <head>
 	<link rel="stylesheet" href="main.css"></style>
-	<script src=countVowel.js async></script>
 </head>
 <body>
 <h1>COUNT THOSE VOWELS!!!</h1>
@@ -11,5 +10,20 @@
 <h4>a e i o u  a e i o u  a e i o u  </h4>
 <h5>a e i o u  a e i o u  a e i o u  </h5>
 <h6> fyi we are pretending that y is not a vowel </h6>
+
+<p>To use the vowel counting functionality, click the button below and enter a string in the prompt that appears. The number of vowels in the string will be displayed in the console.</p>
+<button onclick="countVowelPrompt()">Count Vowels</button>
+
+<script src="countVowel.js"></script>
+<script>
+function countVowelPrompt() {
+    var totalVowels = countVowel(prompt("Please enter a string to count its vowels:"));
+    if (totalVowels == 1) { 
+        console.log("Your entry contained " + totalVowels + " vowel");
+    } else {
+        console.log("Your entry contained " + totalVowels + " vowels");
+    }
+}
+</script>
 </body>
-</hmtl>
+</html>
